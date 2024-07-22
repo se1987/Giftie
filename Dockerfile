@@ -16,5 +16,5 @@ COPY . .
 ENV FLASK_ENV=development
 
 # Flaskアプリケーションの起動
-CMD ["python", "app.py"]
+CMD ["python", "app/app.py"]
 
