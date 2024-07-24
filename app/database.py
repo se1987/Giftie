@@ -24,3 +24,6 @@ def close_connection(connection):
     if connection.is_connected():
         connection.close()
 
+def get_conversation_history(user_id):
+    # ここではダミーデータとして空の文字列を返す
+    return ""
