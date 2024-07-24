@@ -19,17 +19,21 @@ handler = WebhookHandler(os.getenv("CHANNEL_SECRET"))
 # OpenAI API設定
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-@app.route("/callback", methods=["POST"])
+@app.route("/")
+def hello_world():
+    return "<p>Hello, World!</p>"
+
+@app.route("/callback", methods=['POST'])
 def callback():
-    signature = request.headers["X-Line-Signature"]
+    signature = request.headers['X-Line-Signature']
     body = request.get_data(as_text=True)
 
     try:
         handler.handle(body, signature)
     except InvalidSignatureError:
-        abort(400)
+        return jsonify({"status": "Invalid signature"}), 400
 
-    return "OK"
+    return jsonify({"status": "success"}), 200
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
