@@ -1,8 +1,6 @@
 # Giftie (ギフティー)
-A LINE chatbot that recommends gifts using ChatGPT and external APIs.
-
-# Task Manager for pre-engineer
 **TEAM A: sayoko, mikiko, nanako, ami @section8_teamA**
+A LINE chatbot that recommends gifts using ChatGPT and external APIs.
 
 ## 概要
 Giftie（ギフティー）は、LINEを通じてユーザーに最適なプレゼントを提案するチャットボットアプリです。ユーザーがLINE上でプレゼントに関する質問を送信すると、ChatGPTがユーザーのリクエストを理解し、楽天市場APIを使用して関連する商品を検索し、最適なプレゼントを提案します。
