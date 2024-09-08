@@ -1,5 +1,6 @@
 # Giftie (ギフティー)
 **TEAM A: sayoko, mikiko, nanako, ami @section8_teamA**
+![icon](https://github.com/user-attachments/assets/c844e174-dde7-43c0-878e-c2f04ca437c6)
 
 A LINE chatbot that recommends gifts using ChatGPT and external APIs.
 
